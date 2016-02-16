@@ -11,9 +11,11 @@ This image uses the [official Node.js image][docker_hub_node--url] on the [Docke
 
 | Tags | Environment |
 |------|-------------|
-| [latest][dockerfile-latest] | Node.js 5.6 on Debian Wheezy |
-| [wheezy][dockerfile-wheezy] | Node.js 5.6 on Debian Wheezy |
-| [slim][dockerfile-slim] | Node.js 5.6 on Debian Jessie |
+| [latest][dockerfile-latest] | Node.js latest on Debian Wheezy |
+| [5.6][dockerfile-5.6] | Node.js 5.6 on Debian Jessie |
+| [4.3][dockerfile-4.3] | Node.js 4.3 on Debian Jessie |
+| [wheezy][dockerfile-wheezy] | Node.js latest on Debian Wheezy |
+| [slim][dockerfile-slim] | Node.js latest on Debian Jessie |
 | [5.6-wheezy][dockerfile-5.6-wheezy] | Node.js 5.6 on Debian Wheezy |
 | [5.6-slim][dockerfile-5.6-slim] | Node.js 5.6 on Debian Jessie |
 | [4.3-wheezy][dockerfile-4.3-wheezy] | Node.js 4.3 on Debian Wheezy |
@@ -71,6 +73,8 @@ $ docker run \
 [docker_hub--url]: hub.docker.com
 [docker_hub_node--url]: https://hub.docker.com/_/node/
 [dockerfile-latest]: https://github.com/jmfirth/docker-webpack/blob/master/latest/Dockerfile
+[dockerfile-5.6]: https://github.com/jmfirth/docker-webpack/blob/master/5.6/Dockerfile
+[dockerfile-4.3]: https://github.com/jmfirth/docker-webpack/blob/master/4.3/Dockerfile
 [dockerfile-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/wheezy/Dockerfile
 [dockerfile-slim]: https://github.com/jmfirth/docker-webpack/blob/master/slim/Dockerfile
 [dockerfile-5.6-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/5.6/wheezy/Dockerfile
