@@ -2,7 +2,7 @@
 
 > Webpack-based development and build toolchain in a container
 
-[Develop](###watch-and-serve) and [build](###build) JavaScript applications using [webpack][webpack--url] and [webpack-dev-server][webpack-dev-server--url] with ease!  Get all the bells and whistles of modern [Node.js][nodejs--url] and/or web application development without the hassle of installing an environment.
+[Develop](#example:-watch-and-serve) and [build](#example:-build) JavaScript applications using [webpack][webpack--url] and [webpack-dev-server][webpack-dev-server--url] with ease!  Get all the bells and whistles of modern [Node.js][nodejs--url] and/or web application development without the hassle of installing an environment.
 
 
 ## Available Images
@@ -22,7 +22,7 @@ This image uses the [official Node.js image][docker_hub_node--url] on the [Docke
 | [4.3-slim][dockerfile-4.3-slim] | Node.js 4.3 on Debian Jessie |
 
 
-## Install Image
+## Installing the Image
 
 Install latest:
 
@@ -30,11 +30,11 @@ Install latest:
 $ docker pull jmfirth/webpack
 ```
 
-## Running Image
+## Running the Image
 
 The image preinstalls webpack and webpack-dev-server for use in the interactive docker shell.  Any valid webpack and webpack-dev-server command can be run.
 
-### Watch and Serve
+### Example: Watch and Serve
 
 An example of watching and serving the app using webpack-dev-server.
 
@@ -51,7 +51,7 @@ $ docker run \
   webpack-dev-server --hot --inline --progress --host 0.0.0.0
 ```
 
-### Build
+### Example: Build
 
 An example of building the app with webpack.
 
@@ -65,6 +65,52 @@ $ docker run \
   -v /path/to/source:/app \
   jmfirth/webpack \
   webpack
+```
+
+
+### Full Example
+
+Create a docker machine:
+
+```sh
+# create a docker machine called "site"
+$ docker-machine create site --driver=virtualbox
+
+# get environment variables to new vm
+$ eval "$(docker-machine env site)"
+```
+
+Obtain and prepare source:
+
+```sh
+# get some source that uses webpack
+$ git clone https://github.com/petehunt/react-webpack-template.git src
+$ cd src
+
+# install npm dependencies
+$ docker run --rm -i -t -v /path/to/src:/app jmfirth/webpack npm install
+```
+
+Modify the `webpack.config.js` file to watch by polling:
+
+```
+watchOptions: {
+   poll: true
+}
+```
+
+Serve the app:
+
+```sh
+# serve app through webpack-dev-server
+$ docker run \
+  --rm \
+  -i \
+  -t \
+  -v /path/to/src:/app \
+  -p 3000:8080 \
+  jmfirth/webpack \
+  webpack-dev-server --hot --inline --progress --host 0.0.0.0
 ```
 
 [nodejs--url]: https://github.com/nodejs/node
