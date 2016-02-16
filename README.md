@@ -7,17 +7,17 @@
 
 ## Available Images
 
-This images uses the [official Node.js image][docker_hub_node--url] on the [Docker Hub][docker_hub--url] as it's base, following their tag convention.  Below is a list of currently available tags:
+This image uses the [official Node.js image][docker_hub_node--url] on the [Docker Hub][docker_hub--url] as it's base, following their tag convention.  Below is a list of currently available tags:
 
 | Tags | Environment |
 |------|-------------|
-| latest | Node.js 5.6 on Debian Wheezy |
-| wheezy | Node.js 5.6 on Debian Wheezy |
-| slim | Node.js 5.6 on Debian Jessie |
-| wheezy-5.6 | Node.js 5.6 on Debian Wheezy |
-| wheezy-4.3 | Node.js 4.3 on Debian Wheezy |
-| slim-5.6 | Node.js 5.6 on Debian Jessie |
-| slim-4.3 | Node.js 4.3 on Debian Jessie |
+| [latest][dockerfile-latest] | Node.js 5.6 on Debian Wheezy |
+| [wheezy][dockerfile-wheezy] | Node.js 5.6 on Debian Wheezy |
+| [slim][dockerfile-slim] | Node.js 5.6 on Debian Jessie |
+| [5.6-wheezy][dockerfile-5.6-wheezy] | Node.js 5.6 on Debian Wheezy |
+| [5.6-slim][dockerfile-5.6-slim] | Node.js 5.6 on Debian Jessie |
+| [4.3-wheezy][dockerfile-4.3-wheezy] | Node.js 4.3 on Debian Wheezy |
+| [4.3-slim][dockerfile-4.3-slim] | Node.js 4.3 on Debian Jessie |
 
 
 ## Install Image
@@ -70,3 +70,10 @@ $ docker run \
 [webpack-dev-server--url]: https://github.com/webpack/webpack-dev-server
 [docker_hub--url]: hub.docker.com
 [docker_hub_node--url]: https://hub.docker.com/_/node/
+[dockerfile-latest]: https://github.com/jmfirth/docker-webpack/blob/master/latest/Dockerfile
+[dockerfile-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/wheezy/Dockerfile
+[dockerfile-slim]: https://github.com/jmfirth/docker-webpack/blob/master/slim/Dockerfile
+[dockerfile-5.6-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/5.6/wheezy/Dockerfile
+[dockerfile-5.6-slim]: https://github.com/jmfirth/docker-webpack/blob/master/5.6/slim/Dockerfile
+[dockerfile-4.3-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/4.3/wheezy/Dockerfile
+[dockerfile-4.3-slim]: https://github.com/jmfirth/docker-webpack/blob/master/4.3/slim/Dockerfile
