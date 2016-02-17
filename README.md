@@ -34,7 +34,7 @@ $ docker pull jmfirth/webpack
 
 The image preinstalls webpack and webpack-dev-server for use in the interactive docker shell.  Any valid webpack and webpack-dev-server command can be run.
 
-### Example: Install Npm dependencies
+### Example: Install Npm Dependencies
 
 An example of installing project npm dependencies.
 
