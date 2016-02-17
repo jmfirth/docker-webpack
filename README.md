@@ -34,6 +34,22 @@ $ docker pull jmfirth/webpack
 
 The image preinstalls webpack and webpack-dev-server for use in the interactive docker shell.  Any valid webpack and webpack-dev-server command can be run.
 
+### Example: Install Npm dependencies
+
+An example of installing project npm dependencies.
+
+_Note: Assumes that `project.json` exists at source root._
+
+```sh
+$ docker run \
+  --rm \
+  -i \
+  -t \
+  -v /path/to/source:/app \
+  jmfirth/webpack \
+  npm install --no-bin-links
+```
+
 ### Example: Watch and Serve
 
 An example of watching and serving the app using webpack-dev-server.
@@ -88,7 +104,13 @@ $ git clone https://github.com/petehunt/react-webpack-template.git src
 $ cd src
 
 # install npm dependencies
-$ docker run --rm -i -t -v /path/to/src:/app jmfirth/webpack npm install
+$ docker run \
+  --rm \
+  -i \
+  -t \
+  -v /path/to/src:/app \
+  jmfirth/webpack \
+  npm install --no-bin-links
 ```
 
 Modify the `webpack.config.js` file to watch by polling:
