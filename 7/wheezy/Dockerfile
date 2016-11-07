@@ -1,4 +1,4 @@
-FROM node:5.6-wheezy
+FROM node:7-wheezy
 MAINTAINER Justin Firth <jmfirth@gmail.com>
 
 RUN npm install -g webpack webpack-dev-server

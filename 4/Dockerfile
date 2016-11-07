@@ -1,4 +1,4 @@
-FROM node:4.3
+FROM node:4
 MAINTAINER Justin Firth <jmfirth@gmail.com>
 
 RUN npm install -g webpack webpack-dev-server

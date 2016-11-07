@@ -11,15 +11,18 @@ This image uses the [official Node.js image][docker_hub_node--url] on the [Docke
 
 | Tags | Environment |
 |------|-------------|
-| [latest][dockerfile-latest] | Node.js latest on Debian Wheezy |
-| [5.6][dockerfile-5.6] | Node.js 5.6 on Debian Jessie |
-| [4.3][dockerfile-4.3] | Node.js 4.3 on Debian Jessie |
+| [latest][dockerfile-latest] | Node.js latest on Debian Jessie |
+| [7][dockerfile-7] | Node.js 7 latest on Debian Jessie |
+| [6][dockerfile-6] | Node.js 6 latest on Debian Jessie |
+| [4][dockerfile-4] | Node.js 4 latest on Debian Jessie |
 | [wheezy][dockerfile-wheezy] | Node.js latest on Debian Wheezy |
 | [slim][dockerfile-slim] | Node.js latest on Debian Jessie |
-| [5.6-wheezy][dockerfile-5.6-wheezy] | Node.js 5.6 on Debian Wheezy |
-| [5.6-slim][dockerfile-5.6-slim] | Node.js 5.6 on Debian Jessie |
-| [4.3-wheezy][dockerfile-4.3-wheezy] | Node.js 4.3 on Debian Wheezy |
-| [4.3-slim][dockerfile-4.3-slim] | Node.js 4.3 on Debian Jessie |
+| [7-wheezy][dockerfile-7-wheezy] | Node.js 7 latest on Debian Wheezy |
+| [7-slim][dockerfile-7-slim] | Node.js 7 latest on Debian Jessie |
+| [6-wheezy][dockerfile-6-wheezy] | Node.js 6 latest on Debian Wheezy |
+| [6-slim][dockerfile-6-slim] | Node.js 6 latest on Debian Jessie |
+| [4-wheezy][dockerfile-4-wheezy] | Node.js 4 latest on Debian Wheezy |
+| [4-slim][dockerfile-4-slim] | Node.js 4 latest on Debian Jessie |
 
 
 ## Installing the Image
