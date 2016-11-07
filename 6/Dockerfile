@@ -1,7 +1,7 @@
 FROM node:6
 MAINTAINER Justin Firth <jmfirth@gmail.com>
 
-RUN npm install -g webpack webpack-dev-server
+RUN npm install -g webpack webpack-dev-server yarn
 
 VOLUME /app
 

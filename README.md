@@ -42,6 +42,7 @@ The image preinstalls webpack and webpack-dev-server for use in the interactive 
 An example of installing project npm dependencies.
 
 _Note: Assumes that `project.json` exists at source root._
+_Note: [Yarn][yarn-url] is also available globally if you prefer!
 
 ```sh
 $ docker run \
@@ -144,11 +145,15 @@ $ docker run \
 [docker_hub--url]: hub.docker.com
 [docker_hub_node--url]: https://hub.docker.com/_/node/
 [dockerfile-latest]: https://github.com/jmfirth/docker-webpack/blob/master/latest/Dockerfile
-[dockerfile-5.6]: https://github.com/jmfirth/docker-webpack/blob/master/5.6/Dockerfile
-[dockerfile-4.3]: https://github.com/jmfirth/docker-webpack/blob/master/4.3/Dockerfile
+[dockerfile-7]: https://github.com/jmfirth/docker-webpack/blob/master/7/Dockerfile
+[dockerfile-6]: https://github.com/jmfirth/docker-webpack/blob/master/6/Dockerfile
+[dockerfile-4]: https://github.com/jmfirth/docker-webpack/blob/master/4/Dockerfile
 [dockerfile-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/wheezy/Dockerfile
 [dockerfile-slim]: https://github.com/jmfirth/docker-webpack/blob/master/slim/Dockerfile
-[dockerfile-5.6-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/5.6/wheezy/Dockerfile
-[dockerfile-5.6-slim]: https://github.com/jmfirth/docker-webpack/blob/master/5.6/slim/Dockerfile
-[dockerfile-4.3-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/4.3/wheezy/Dockerfile
-[dockerfile-4.3-slim]: https://github.com/jmfirth/docker-webpack/blob/master/4.3/slim/Dockerfile
+[dockerfile-7-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/7/wheezy/Dockerfile
+[dockerfile-7-slim]: https://github.com/jmfirth/docker-webpack/blob/master/7/slim/Dockerfile
+[dockerfile-6-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/6/wheezy/Dockerfile
+[dockerfile-6-slim]: https://github.com/jmfirth/docker-webpack/blob/master/6/slim/Dockerfile
+[dockerfile-4-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/4/wheezy/Dockerfile
+[dockerfile-4-slim]: https://github.com/jmfirth/docker-webpack/blob/master/4/slim/Dockerfile
+[yarn-url][https://yarnpkg.com/]
