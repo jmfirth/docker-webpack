@@ -42,7 +42,7 @@ The image preinstalls webpack and webpack-dev-server for use in the interactive 
 An example of installing project npm dependencies.
 
 _Note: Assumes that `project.json` exists at source root._
-_Note: [Yarn][yarn-url] is also available globally if you prefer!_
+_Note: [Yarn][yarn--url] is also available globally if you prefer!_
 
 ```sh
 $ docker run \
@@ -156,4 +156,4 @@ $ docker run \
 [dockerfile-6-slim]: https://github.com/jmfirth/docker-webpack/blob/master/6/slim/Dockerfile
 [dockerfile-4-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/4/wheezy/Dockerfile
 [dockerfile-4-slim]: https://github.com/jmfirth/docker-webpack/blob/master/4/slim/Dockerfile
-[yarn-url][https://yarnpkg.com/]
+[yarn--url]: https://yarnpkg.com/
