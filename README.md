@@ -12,11 +12,14 @@ This image uses the [official Node.js image][docker_hub_node--url] on the [Docke
 | Tags | Environment |
 |------|-------------|
 | [latest][dockerfile-latest] | Node.js latest on Debian Jessie |
+| [8][dockerfile-8] | Node.js 8 latest on Debian Jessie |
 | [7][dockerfile-7] | Node.js 7 latest on Debian Jessie |
 | [6][dockerfile-6] | Node.js 6 latest on Debian Jessie |
 | [4][dockerfile-4] | Node.js 4 latest on Debian Jessie |
 | [wheezy][dockerfile-wheezy] | Node.js latest on Debian Wheezy |
 | [slim][dockerfile-slim] | Node.js latest on Debian Jessie |
+| [8-wheezy][dockerfile-8-wheezy] | Node.js 8 latest on Debian Wheezy |
+| [8-slim][dockerfile-8-slim] | Node.js 8 latest on Debian Jessie |
 | [7-wheezy][dockerfile-7-wheezy] | Node.js 7 latest on Debian Wheezy |
 | [7-slim][dockerfile-7-slim] | Node.js 7 latest on Debian Jessie |
 | [6-wheezy][dockerfile-6-wheezy] | Node.js 6 latest on Debian Wheezy |
@@ -145,11 +148,14 @@ $ docker run \
 [docker_hub--url]: hub.docker.com
 [docker_hub_node--url]: https://hub.docker.com/_/node/
 [dockerfile-latest]: https://github.com/jmfirth/docker-webpack/blob/master/latest/Dockerfile
+[dockerfile-8]: https://github.com/jmfirth/docker-webpack/blob/master/8/Dockerfile
 [dockerfile-7]: https://github.com/jmfirth/docker-webpack/blob/master/7/Dockerfile
 [dockerfile-6]: https://github.com/jmfirth/docker-webpack/blob/master/6/Dockerfile
 [dockerfile-4]: https://github.com/jmfirth/docker-webpack/blob/master/4/Dockerfile
 [dockerfile-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/wheezy/Dockerfile
 [dockerfile-slim]: https://github.com/jmfirth/docker-webpack/blob/master/slim/Dockerfile
+[dockerfile-8-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/8/wheezy/Dockerfile
+[dockerfile-8-slim]: https://github.com/jmfirth/docker-webpack/blob/master/8/slim/Dockerfile
 [dockerfile-7-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/7/wheezy/Dockerfile
 [dockerfile-7-slim]: https://github.com/jmfirth/docker-webpack/blob/master/7/slim/Dockerfile
 [dockerfile-6-wheezy]: https://github.com/jmfirth/docker-webpack/blob/master/6/wheezy/Dockerfile
